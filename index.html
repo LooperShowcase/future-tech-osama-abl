@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Osama</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Osama`s voice</h1>
+      <button onclick="speak()">audio</button>
+
+      <form
+        onsubmit="event.preventDefault();
+        conversationUserAdd(document.getElementById('input-text').value);
+        openai_test();
+            "
+      >
+        <input type="text" id="input-text" placeholder="say something..." />
+        <button id="submit-button">submit</button>
+      </form>
+      <div id="chat-container"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
